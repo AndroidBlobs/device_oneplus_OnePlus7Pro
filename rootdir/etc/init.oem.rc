@@ -1061,14 +1061,14 @@ on property:persist.vendor.brightness.debug=0
 
 service enable_auto_brightness_log /system/bin/auto_brightness_log.sh enable
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service disable_auto_brightness_log /system/bin/auto_brightness_log.sh disable
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 # simon.miao@Multimedia, 2019/07/13, Add for gamut mapping
@@ -1098,48 +1098,48 @@ on property:vendor.sys.blacklist.layer=1
 
 service notify_srgb_color_mode /system/bin/notify_color_mode.sh srgb
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_p3_color_mode /system/bin/notify_color_mode.sh p3
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_hdr_color_mode /system/bin/notify_color_mode.sh hdr
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_native_color_mode /system/bin/notify_color_mode.sh native
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_video_state_on /system/bin/notify_color_mode.sh play
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_video_state_off /system/bin/notify_color_mode.sh stop
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_blacklist_layer_off /system/bin/notify_color_mode.sh allow_video_mode
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot
 
 service notify_blacklist_layer_on /system/bin/notify_color_mode.sh forbid_video_mode
     disabled
-    user system
-    group system
+    user root
+    group root system
     oneshot

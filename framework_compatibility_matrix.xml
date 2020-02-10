@@ -268,14 +268,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.translation</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusTranslation</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.automotive.qcarcam</name>
         <version>1.0</version>

@@ -196,12 +196,6 @@
 <!-- wangbuqing,add USB RX default config,20180620,add Start -->
     <ctl name="USB_AUDIO_RX SampleRate" value="KHZ_48" />
 <!-- wangbuqing,add USB RX default config,20180620,add END -->
-<!-- #ifdef VENDOR_EDIT -->
-<!-- dujie@MM.Audio, 2019/09/20, add for ktv loopback -->
-    <ctl name="SLIMBUS_6_RX Port Mixer SLIM_1_TX" value="0" />
-    <ctl name="USB_AUDIO_RX Port Mixer USB_AUDIO_TX" value="0" />
-    <ctl name="USB_DL_HL Switch" value="0" />
-<!-- #endif -->
     <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="0" />
     <ctl name="SLIM_2_RX Format" value="UNPACKED" />
     <ctl name="SLIM_2_RX SampleRate" value="KHZ_48" />
@@ -1829,19 +1823,6 @@
     <path name="audio-record pa-fb">
         <ctl name="MultiMedia1 Mixer QUAT_MI2S_TX" value="1" />
     </path>
-
-<!-- #dujie@MM.Audio, 2019/09/20, add for ktv loopback -->
-    <path name="audio-record ktv-afe">
-        <ctl name="MultiMedia1 Mixer SLIM_1_TX" value="1" />
-        <ctl name="SLIMBUS_6_RX Port Mixer SLIM_1_TX" value="1" />
-        <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="hifi-record ktv-afe-usb">
-        <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
-        <ctl name="USB_AUDIO_RX Port Mixer USB_AUDIO_TX" value="1" />
-        <ctl name="USB_DL_HL Switch" value="1" />
-    </path>
 <!-- #endif -->
 
     <path name="audio-record headset-mic">
@@ -2817,8 +2798,7 @@
 
     <path name="handset-mic">
 <!-- #ifdef VENDOR_EDIT-->
-<!-- modified this for sva effect 20190923-->
-        <path name="amic1" />
+        <path name="amic4" />
 <!-- #endif VENDOR_EDIT-->
     </path>
 
@@ -3037,18 +3017,6 @@
         <path name="amic2" />
         <ctl name="DEC0 Volume" value="84" />
     </path>
-
-<!-- #ifdef VENDOR_EDIT -->
-<!-- dujie@MM.Audio, 2019/09/20, add for ktv loopback -->
-    <path name="headset-mic-ktv">
-        <path name="amic2" />
-        <ctl name="ADC2 Volume" value="8" />
-        <ctl name="DEC1 Volume" value="82" />
-    </path>
-
-    <path name="usb-headset-mic-ktv">
-    </path>
-<!-- #endif -->
 
     <path name="headset-mic-liquid">
         <path name="amic2" />

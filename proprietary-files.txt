@@ -36,7 +36,6 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/libyuv_watermark_skel.so
 
 # ANT
 -lib/libantradio.so
@@ -136,14 +135,22 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
 # Audio-Hardware
+vendor/lib/hw/audio.bluetooth.default.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
+vendor/lib64/hw/audio.bluetooth.default.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -156,8 +163,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/audio.bluetooth.default.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/libbluetooth_audio_session.so
@@ -168,8 +173,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/audio.bluetooth.default.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session.so
@@ -1421,7 +1424,6 @@ vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service
-vendor/bin/hw/vendor.oneplus.hardware.translation@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.wifi@1.0-service
 vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc
 vendor/etc/init/vendor.oneplus.faceunlock.hal@1.0-service.rc
@@ -1431,14 +1433,12 @@ vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.param@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.rpmb@1.0-service.rc
-vendor/etc/init/vendor.oneplus.hardware.translation@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.wifi@1.0-service.rc
 vendor/etc/oneplus_fps_plus.conf
 vendor/etc/oneplus_ftm_test_dulspk.wav
 vendor/etc/oneplus_ftm_test_max.wav
 vendor/lib/vendor.oneplus.camera.CameraHIDL@1.0.so
 vendor/lib/vendor.oneplus.hardware.param@1.0.so
-vendor/lib/vendor.oneplus.hardware.translation@1.0.so
 vendor/lib64/lib_oneplus_watermark.so
 vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so
 vendor/lib64/vendor.oneplus.engnative.engineer@1.0.so
@@ -1449,7 +1449,6 @@ vendor/lib64/vendor.oneplus.hardware.drmkey@1.0.so
 vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so
 vendor/lib64/vendor.oneplus.hardware.param@1.0.so
 vendor/lib64/vendor.oneplus.hardware.rpmb@1.0.so
-vendor/lib64/vendor.oneplus.hardware.translation@1.0.so
 vendor/lib64/vendor.oneplus.hardware.wifi@1.0.so
 vendor/lib64/vendor.oneplus.hardware.wifi@1.1.so
 vendor/overlay/oneplus_aodnotification_gold/aodnotification_gold_systemui.apk
@@ -1476,7 +1475,6 @@ vendor/overlay/oneplus_basiccolor_black_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_black_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_black_OPWeather/net.oneplus.weather.apk
-vendor/overlay/oneplus_basiccolor_black_opwlb/black_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_black_phone/black_phone.apk
 vendor/overlay/oneplus_basiccolor_black_settings/black_settings.apk
 vendor/overlay/oneplus_basiccolor_black_settings_intelligence/black_settings_intelligence.apk
@@ -1504,7 +1502,6 @@ vendor/overlay/oneplus_basiccolor_white_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_white_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_white_OPWeather/net.oneplus.weather.apk
-vendor/overlay/oneplus_basiccolor_white_opwlb/white_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_white_phone/white_phone.apk
 vendor/overlay/oneplus_basiccolor_white_settings/white_settings.apk
 vendor/overlay/oneplus_basiccolor_white_settings_intelligence/white_settings_intelligence.apk
@@ -1512,25 +1509,11 @@ vendor/overlay/oneplus_basiccolor_white_simcontacts/white_simcontacts.apk
 vendor/overlay/oneplus_basiccolor_white_sound_tuner/white_sound_tuner.apk
 vendor/overlay/oneplus_basiccolor_white_telecom/white_telecom.apk
 vendor/overlay/oneplus_basiccolor_white_wifiapsettings/white_wifiapsettings.apk
-vendor/overlay/oneplus_black_OneplusAccount/com.oneplus.account.apk
-vendor/overlay/oneplus_black_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_black_OPFilemanager/com.oneplus.filemanager.apk
-vendor/overlay/oneplus_black_OPNote/com.oneplus.note.apk
-vendor/overlay/oneplus_black_OPScreenRecord/com.oneplus.screenrecord.apk
-vendor/overlay/oneplus_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
-vendor/overlay/oneplus_black_OPWeather/net.oneplus.weather.apk
 vendor/overlay/oneplus_shape_circle/OnePlusIconShapeCircleOverlay.apk
 vendor/overlay/oneplus_shape_roundedrect/OnePlusIconShapeRoundedRectOverlay.apk
 vendor/overlay/oneplus_shape_square/OnePlusIconShapeSquareOverlay.apk
 vendor/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk
 vendor/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk
-vendor/overlay/oneplus_white_OneplusAccount/com.oneplus.account.apk
-vendor/overlay/oneplus_white_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_white_OPFilemanager/com.oneplus.filemanager.apk
-vendor/overlay/oneplus_white_OPNote/com.oneplus.note.apk
-vendor/overlay/oneplus_white_OPScreenRecord/com.oneplus.screenrecord.apk
-vendor/overlay/oneplus_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
-vendor/overlay/oneplus_white_OPWeather/net.oneplus.weather.apk
 
 # Pasrmanager
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
@@ -2050,14 +2033,18 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.msmnile.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.msmnile.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.msmnile.so
-vendor/lib64/hw/thermal.msmnile.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2416,7 +2403,6 @@ vendor/lib/libwigigsensing.so
 vendor/lib/libwigig_flashaccess.so
 vendor/lib/libwigig_pciaccess.so
 vendor/lib/libwigig_utils.so
-vendor/lib/libyuv_watermark.so
 vendor/lib/lib_bokehlib.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
@@ -2507,7 +2493,6 @@ vendor/lib64/libwigigsensing.so
 vendor/lib64/libwigig_flashaccess.so
 vendor/lib64/libwigig_pciaccess.so
 vendor/lib64/libwigig_utils.so
-vendor/lib64/libyuv_watermark.so
 vendor/lib64/lib_bokehlib.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
