@@ -330,10 +330,18 @@
     <carrier_config mcc="260" mnc="02" />
     <carrier_config mcc="260" mnc="03" />
     <carrier_config mcc="260" mnc="05" />
+    <carrier_config mcc="260" mnc="06">
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="26001" />
+            <item value="26002" />
+            <item value="26003" />
+        </string-array>
+    </carrier_config>
     <carrier_config mcc="260" mnc="34" />
     <carrier_config mcc="262" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <boolean name="vendor_hide_wfc_preference_ui" value="true" />
         <boolean name="display_hd_audio_property_bool" value="false" />
@@ -1951,6 +1959,7 @@
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="allow_adding_apns_bool" value="false" />
         <int name="volte_replacement_rat_int" value="3" />
+        <string name="gps.lpp_profile">3</string>
     </carrier_config>
     <carrier_config mcc="310" mnc="640">
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
@@ -2034,11 +2043,15 @@
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true" />
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="allow_adding_apns_bool" value="false" />
+        <string name="gps.lpp_profile">3</string>
         <int name="volte_replacement_rat_int" value="3" />
         <string-array name="carrier_metered_apn_types_strings" num="1">
             <item value="default" />
         </string-array>
         <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="BAE1000000000000" gid2="1A00000000000000" mcc="311" mnc="480">
+        <string name="carrier_name_string">Visible</string>
     </carrier_config>
     <carrier_config mcc="312" mnc="530">
         <boolean name="carrier_rtt_auto_upgrade" value="true" />
@@ -2835,6 +2848,7 @@
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="allow_adding_apns_bool" value="false" />
         <int name="volte_replacement_rat_int" value="3" />
+        <string name="gps.lpp_profile">3</string>
     </carrier_config>
     <carrier_config mcc="311" mnc="270">
         <boolean name="vendor_ecc_after_radio_on_under_flight_mode" value="true" />
@@ -2849,6 +2863,7 @@
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="allow_adding_apns_bool" value="false" />
         <int name="volte_replacement_rat_int" value="3" />
+        <string name="gps.lpp_profile">3</string>
     </carrier_config>
     <carrier_config mcc="312" mnc="770">
         <boolean name="vendor_ecc_after_radio_on_under_flight_mode" value="true" />
@@ -2863,6 +2878,7 @@
         <string-array name="read_only_apn_types_string_array" num="0" />
         <boolean name="allow_adding_apns_bool" value="false" />
         <int name="volte_replacement_rat_int" value="3" />
+        <string name="gps.lpp_profile">3</string>
     </carrier_config>
     <carrier_config mcc="520" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />

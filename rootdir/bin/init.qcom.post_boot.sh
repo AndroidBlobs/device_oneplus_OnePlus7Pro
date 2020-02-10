@@ -543,6 +543,9 @@ else
         # use Google default LMK series for all 64-bit targets >=2GB.
         echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
 
+        # kenneth.wang@SYSTEM, 2017/09/26, [AN-791] Memory Optimization - Change lmk adj
+        echo "0,100,200,250,801,950" > /sys/module/lowmemorykiller/parameters/adj
+
         # Enable oom_reaper
         if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
             echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper

@@ -521,6 +521,7 @@ vendor/lib/libarcsoft_dualcam_refocus_preview.so
 vendor/lib/libarcsoft_dualcam_refocus_right.so
 vendor/lib/libarcsoft_dualcam_refocus_uw.so
 vendor/lib/libarcsoft_hdrplus_hvx_stub.so
+vendor/lib/libarcsoft_portrait_distortion_correction.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
@@ -536,6 +537,7 @@ vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_high_dynamic_range_couple.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_piczoom.so
+vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libarcsoft_smart_denoise.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
@@ -556,6 +558,8 @@ vendor/etc/camera/attribute.model
 vendor/etc/camera/calibrationOutput_uw.bin
 vendor/etc/camera/calibrationOutput_wt.bin
 vendor/etc/camera/distortion_result.bin
+vendor/etc/camera/OnePlus_7tPro_Golden_1.bin
+vendor/etc/camera/OnePlus_7tPro_Golden_2.bin
 vendor/etc/camera/vidhance_calibration
 
 # Camera-firmware
@@ -1458,7 +1462,6 @@ vendor/overlay/oneplus_basiccolor_black_emergency/black_emergency.apk
 vendor/overlay/oneplus_basiccolor_black_OneplusAccount/com.oneplus.account.apk
 vendor/overlay/oneplus_basiccolor_black_OPBackup/com.oneplus.opbackup.apk
 vendor/overlay/oneplus_basiccolor_black_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_basiccolor_black_OPCardpackage/com.oneplus.card.apk
 vendor/overlay/oneplus_basiccolor_black_OPFilemanager/com.oneplus.filemanager.apk
 vendor/overlay/oneplus_basiccolor_black_OPGamingSpace/com.oneplus.gamespace.apk
 vendor/overlay/oneplus_basiccolor_black_OPLauncher/net.oneplus.launcher.apk
@@ -1468,6 +1471,7 @@ vendor/overlay/oneplus_basiccolor_black_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_black_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_black_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_black_opwlb/black_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_black_phone/black_phone.apk
 vendor/overlay/oneplus_basiccolor_black_settings/black_settings.apk
 vendor/overlay/oneplus_basiccolor_black_settings_intelligence/black_settings_intelligence.apk
@@ -1485,7 +1489,6 @@ vendor/overlay/oneplus_basiccolor_white_emergency/white_emergency.apk
 vendor/overlay/oneplus_basiccolor_white_OneplusAccount/com.oneplus.account.apk
 vendor/overlay/oneplus_basiccolor_white_OPBackup/com.oneplus.opbackup.apk
 vendor/overlay/oneplus_basiccolor_white_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_basiccolor_white_OPCardpackage/com.oneplus.card.apk
 vendor/overlay/oneplus_basiccolor_white_OPFilemanager/com.oneplus.filemanager.apk
 vendor/overlay/oneplus_basiccolor_white_OPGamingSpace/com.oneplus.gamespace.apk
 vendor/overlay/oneplus_basiccolor_white_OPLauncher/net.oneplus.launcher.apk
@@ -1495,6 +1498,7 @@ vendor/overlay/oneplus_basiccolor_white_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_white_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_white_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_white_opwlb/white_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_white_phone/white_phone.apk
 vendor/overlay/oneplus_basiccolor_white_settings/white_settings.apk
 vendor/overlay/oneplus_basiccolor_white_settings_intelligence/white_settings_intelligence.apk
@@ -1767,6 +1771,7 @@ vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
 # Radio-IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
