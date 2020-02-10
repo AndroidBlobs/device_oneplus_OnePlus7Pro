@@ -36,6 +36,7 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/libyuv_watermark_skel.so
 
 # ANT
 -lib/libantradio.so
@@ -561,6 +562,7 @@ vendor/etc/camera/attribute.model
 vendor/etc/camera/calibrationOutput_uw.bin
 vendor/etc/camera/calibrationOutput_wt.bin
 vendor/etc/camera/distortion_result.bin
+vendor/etc/camera/distortion_result_7T_Golden_18865.bin
 vendor/etc/camera/OnePlus_7tPro_Golden_1.bin
 vendor/etc/camera/OnePlus_7tPro_Golden_2.bin
 vendor/etc/camera/vidhance_calibration
@@ -1424,6 +1426,7 @@ vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service
+vendor/bin/hw/vendor.oneplus.hardware.translation@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.wifi@1.0-service
 vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc
 vendor/etc/init/vendor.oneplus.faceunlock.hal@1.0-service.rc
@@ -1433,12 +1436,14 @@ vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.param@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.rpmb@1.0-service.rc
+vendor/etc/init/vendor.oneplus.hardware.translation@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.wifi@1.0-service.rc
 vendor/etc/oneplus_fps_plus.conf
 vendor/etc/oneplus_ftm_test_dulspk.wav
 vendor/etc/oneplus_ftm_test_max.wav
 vendor/lib/vendor.oneplus.camera.CameraHIDL@1.0.so
 vendor/lib/vendor.oneplus.hardware.param@1.0.so
+vendor/lib/vendor.oneplus.hardware.translation@1.0.so
 vendor/lib64/lib_oneplus_watermark.so
 vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so
 vendor/lib64/vendor.oneplus.engnative.engineer@1.0.so
@@ -1449,6 +1454,7 @@ vendor/lib64/vendor.oneplus.hardware.drmkey@1.0.so
 vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so
 vendor/lib64/vendor.oneplus.hardware.param@1.0.so
 vendor/lib64/vendor.oneplus.hardware.rpmb@1.0.so
+vendor/lib64/vendor.oneplus.hardware.translation@1.0.so
 vendor/lib64/vendor.oneplus.hardware.wifi@1.0.so
 vendor/lib64/vendor.oneplus.hardware.wifi@1.1.so
 vendor/overlay/oneplus_aodnotification_gold/aodnotification_gold_systemui.apk
@@ -1475,6 +1481,7 @@ vendor/overlay/oneplus_basiccolor_black_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_black_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_black_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_black_opwlb/black_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_black_phone/black_phone.apk
 vendor/overlay/oneplus_basiccolor_black_settings/black_settings.apk
 vendor/overlay/oneplus_basiccolor_black_settings_intelligence/black_settings_intelligence.apk
@@ -1502,6 +1509,7 @@ vendor/overlay/oneplus_basiccolor_white_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_white_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_white_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_white_opwlb/white_worklifebalance.apk
 vendor/overlay/oneplus_basiccolor_white_phone/white_phone.apk
 vendor/overlay/oneplus_basiccolor_white_settings/white_settings.apk
 vendor/overlay/oneplus_basiccolor_white_settings_intelligence/white_settings_intelligence.apk
@@ -2403,6 +2411,7 @@ vendor/lib/libwigigsensing.so
 vendor/lib/libwigig_flashaccess.so
 vendor/lib/libwigig_pciaccess.so
 vendor/lib/libwigig_utils.so
+vendor/lib/libyuv_watermark.so
 vendor/lib/lib_bokehlib.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
@@ -2493,6 +2502,7 @@ vendor/lib64/libwigigsensing.so
 vendor/lib64/libwigig_flashaccess.so
 vendor/lib64/libwigig_pciaccess.so
 vendor/lib64/libwigig_utils.so
+vendor/lib64/libyuv_watermark.so
 vendor/lib64/lib_bokehlib.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
