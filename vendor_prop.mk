@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     audio.sys.noisy.broadcast.delay=600 \
     audio.sys.offload.pstimeout.secs=3 \
     audio.volume.headset.gain.depcal=true \
+    dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapsize=512m \

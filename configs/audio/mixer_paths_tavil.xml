@@ -638,6 +638,8 @@
     <ctl name="QUAT_MI2S_RX Audio Mixer Ultrasound" value="0" />
     <!-- Stereo or mono smart pa controls -->
     <ctl name="TFA_CHIP_SELECTOR" value="0" />
+    <!-- yewenliang@MM.Audio, 2019/11/21, add for close pa -->
+    <ctl name="Tfa Enable" value="1" />
     <ctl name="stereo Profile" value="speaker" />
     <!-- Ultrasound default settings-->
     <ctl name="Ultrasound Event" value="0" />
@@ -2607,6 +2609,11 @@
    </path>
 
    <path name="speaker-ext-1">
+   </path>
+
+    <!-- yewenliang@MM.Audio, 2019/11/21, add for close pa -->
+    <path name="speaker-dummy">
+        <ctl name="Tfa Enable" value="0" />
    </path>
 
 <!-- suzhiguang,for speaker MMI test -->

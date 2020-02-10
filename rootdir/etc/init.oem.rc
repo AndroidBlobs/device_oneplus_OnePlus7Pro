@@ -60,6 +60,12 @@ on post-fs-data
     chown system system /dev/ht_ctl
     chown system system /dev/cc_ctl
     chown system system /proc/cc_ctl
+    chown system system /dev/cpuset/top-app/cpus
+    chmod 664 /dev/cpuset/top-app/cpus
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+    chmod 664 /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+    chmod 664 /sys/module/memplus_core/parameters/memory_plus_wake_gcd
+    chown system system /sys/module/memplus_core/parameters/memory_plus_wake_gcd
 #endif
 #changhua add for fingerint
 on boot
@@ -640,7 +646,13 @@ on post-fs
     chown system system /sys/module/qpnp_smb5/parameters/usb_interval_temp
     chmod 0666 /sys/module/qpnp_smb5/parameters/call_on
     chown system system /sys/module/qpnp_smb5/parameters/call_on
-
+#ifdef VENDOR_EDIT
+#ken.chenxm@SYSTEM, 2019/10/10, add for [OSP-3172] charging optimizated
+    chown system system /sys/class/power_supply/battery/op_disable_charge
+    chmod 660 /sys/class/power_supply/battery/op_disable_charge
+    chown system system /sys/class/power_supply/bms/battery_health
+    chmod 660 /sys/class/power_supply/bms/battery_health
+#endif
 #ifdef VENDOR_EDIT
 #niejianan@oneplus.framework , 2015/04/25, add for mmi charging test
 on property:sys.fastcharger=true
